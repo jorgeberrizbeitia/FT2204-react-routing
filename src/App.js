@@ -50,9 +50,20 @@ function App() {
 
       <h1>Mi pagina guay de Pokemons!</h1>
 
-      <PokemonNav />
+      <div id="mi-pagina">
+        <PokemonNav />
 
-      <PokemonProfile />
+        <Routes>
+
+          <Route path="/" element={ <Home /> }/>
+          <Route path="/poke/:pokename" element={ <PokemonProfile /> }/>
+
+        </Routes>
+      </div>
+
+      
+
+      
 
     </div>
   );
